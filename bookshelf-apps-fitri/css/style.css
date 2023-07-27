@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    display: block;
+
+}
+
+.logo a{
+    font-family: Courier;
+    color: #DF7861;    
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.logo{
+    padding: 3px 10px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 2px rgb(202, 118, 22) solid;
+}
+
+.beranda, .btnList{
+    display: flex;
+    align-items: center;
+}
+
+.beranda img{
+    height: auto;
+    width: 60%;
+    margin: 20px;
+    
+}
+
+.row{
+    flex-direction: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    width: 40%;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #9a4400;
+    font-family: Arial;
+}
+
+.beranda p{
+    font-size: 18px;
+}
+
+.tambahBuku{
+    width: 40%;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 7px;
+    border: 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    background-color: #F1A661;
+}
+
+main {
+    margin: auto;
+    padding: 5px 15px 20px 15px;
+}
+
+.input_section {
+    margin: auto;
+    width: 50%;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input_section h2 {
+    padding: 10px 0;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+    padding-top: 5px ;
+    color: #F1A661;
+    font-size: 20px;
+}
+
+form {
+    width: 70%;
+    padding: 16px 40px;
+    border: 1px black solid;
+    color: #F1A661;
+    font-weight: bold;
+}
+
+.input_section > form > .btnList > button, #bookCancel {
+    background-color: #F1A661;
+    color: white;
+    font-size: 14px;
+    border: 0;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+#bookCancel{
+    width: 23%;
+    margin: 10px 5px;
+}
+
+.input_section > form > .input > input {
+    width: 100%;
+    margin: 2px 0 10px 0;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px black solid;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+}
+
+.search_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    margin: auto;
+    width: 50%;
+}
+
+.search_section > form > input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+::placeholder{
+    font-size: 14px;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book_shelf {
+    border: 2px solid #DF7861;
+    width: 50%;
+}
+
+.book_shelf h2{
+    border-bottom: 1px #DF7861 solid;
+}
+
+.book_shelf > .book_list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 3px;  
+}
+
+.book_item {
+    padding: 8px 5px 16px 5px;
+    width: 30%;
+    max-height: 30%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 1px 3px 2px #a55050;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: #F1A661;
+    text-transform: capitalize;
+}
+
+p {
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+.fa-check , .fa-rotate-left, .delete-list{
+    width: 20%;
+    padding: 5px 0;
+    background-color: rgb(255, 124, 17);
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 5px 0px 0px;
+
+}
+
+.delete-list{
+    background-color: rgb(255, 124, 17);
+    color: white;
+
+}
+
+
+footer{
+    border-top: 1px rgb(202, 118, 22) solid;;
+    margin: 50px 0 0 0;
+    padding: 8px;
+    text-align: center;
+}
+
+@media screen and (max-width: 990px){
+    .input_section, .search_section, .beranda img{
+        margin: auto;
+        width: 100%;
+    }
+
+    .beranda {
+        display: block;
+    }
+
+    .row{
+        margin: auto;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+    }
+
+    .book_item{
+        width:45%;
+    }
+
+    p {
+        font-size: 11px;
+    }
+}
+

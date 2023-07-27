@@ -1,0 +1,402 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open sans', sans serif;
+}
+
+#content, #contentArtikel, #contentBlog{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    padding: 20px 0 0 0;
+}
+
+#contentArtikel{
+    width: 900px;
+}
+
+#contentBlog{
+    width: 800px;
+}
+
+.wrapper{
+    width: 7700px;
+    margin: auto 25px;
+    position: relative;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*-----------navigasi----------*/
+
+.logo a {
+    float: left;
+    width: 20px;
+    font-family: courier;
+    font-weight: bold;
+    font-size: 55px;
+    color: #AC7088;
+}
+
+.menu{
+    float: right
+}
+
+header{
+    display: inline;
+}
+
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    border-bottom: solid 1px #AC7088;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left ;
+}
+
+nav ul li a{
+    font-family: Helvetica;
+    font-size: 17px;
+    font-weight: bold;
+    color: #826F66;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+}
+
+nav ul li a:hover{
+    border: 1.5px #C89595 solid;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li a:active{
+    background-color: #C89595;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.go-top-btn{
+    font-size: 1em;
+    position: fixed;
+    z-index: 1;
+    bottom: 45px;
+    right: 27px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: #ffffff;
+    border: #ffffff;
+    background-color: #e0918c;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------Body----------*/
+
+h2 a {
+    font-family: Helvetica;
+    color: #4a403f;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding-left: 35px;
+}
+
+#contentArtikel > h2 > a {
+    padding-left: 0px;
+}
+
+.image{
+    width: 100%;
+}
+
+.artikel {
+    text-align: justify; 
+    padding: 20px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+#contentArtikel > .row {
+    display: block;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.card a{
+    font-family: Helvetica;
+    color: #4a403f;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card p{
+    margin: 15px 0;
+    color: rgb(136, 133, 133);
+    text-align: justify;
+}
+
+.card a:hover{
+    color: #b19b9b;
+}
+
+.row .card{
+    width: 30%;
+    box-shadow: 1px 3px 10px #553939;
+    margin: 5px 6px 6px 10px;
+    border-radius: 0 2% 2% 2%;
+    background-color: #ffffff;
+}
+
+#contentArtikel > .row > .card {
+    width: 100%;
+    margin: 5px 10px 20px 10px;
+}
+
+.imageArtikel{
+    width: 100%;
+    padding-top: 20px;
+}
+
+#contentBlog > .card > h2 {
+    font-family: Helvetica;
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+#contentBlog > .card > p {
+    color: #4a403f;
+    font-size: 16px;
+    margin: 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+time{
+    color: rgb(179, 179, 179);
+    font-size: 13px;
+    font-family: Helvetica;
+}
+
+figcaption{
+    color: rgb(154, 153, 153);
+    font-style: italic;
+}
+
+h3{
+    font-family: Helvetica;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px 0;
+    font-weight: bold;
+}
+/*-----------aside----------*/
+
+.profile{
+    text-align: center;
+}
+
+.profile img{
+    margin: 10px 0px;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+}
+
+
+.row ul {
+    font-weight: bold; 
+    padding: 0 3px;
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+.column .card{
+    font-family: Helvetica;
+    color: #ffffff;
+    width: 30%;
+    height: 30%;
+    padding: 20px;
+    box-shadow: 1px 3px 10px #c2a3a3;
+    margin: 5px 6px 6px 10px;
+    border-radius: 3%;
+    background-color: #A77979;
+}
+
+/*------------footer--------*/
+
+.footer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0 0 0;
+}
+
+.footer-section{
+    width: 23%;
+    margin: 30px auto;
+}
+
+h4{
+    font-family: Helvetica;
+    font-size: 20px;
+    color: #48252c;
+    left: 0%;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+h4::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-section p{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #6C4A4A;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.footer-section .social-links a img{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    left: 0%;
+    margin:0 5px 5px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.logo-footer a{
+    font-family: courier;
+    font-weight: bold;
+    font-size: 80px;
+    color: #AC7088;
+    padding: 30px;
+}
+
+
+.copy{
+    padding-top: 20px ;
+    font-size: 10px;
+}
+
+/*--------------Responsive------------*/
+@media screen and (max-width: 990px){
+        #content, #contentArtikel, #contentBlog{
+            width: 100%;
+        }
+
+        nav .menu{
+            width: 100%;
+            margin: 0;
+        }
+
+        nav .menu ul{
+            text-align: center;
+            margin: auto;
+            line-height: 60px;
+        }
+
+        nav .menu ul li{
+            display: inline-block;
+            float: none;
+        }
+
+        .go-top-btn{
+            right: 10px;
+        }
+
+        .logo a{
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .row .card, #contentArtikel > .row > .card, #contentBlog > .card{
+            width: 95%;
+            height: auto;
+            margin: 2px 10px 20px 10px;
+        }
+        
+        #contentArtikel > .row > .card {
+            margin: 12px 10px 20px 15px;
+        }
+
+        h2 a, #contentArtikel > h2 > a {
+            padding-left: 10px;
+        }
+
+        .column .card{
+            width: 80%;
+        }
+        
+        .logo-footer a{
+            padding: 0px;
+        }
+
+        .footer{
+            display: block;
+        }
+
+        .footer-section{
+            width: 100%;
+            padding: 8px;
+            margin: 15px auto;
+        }
+
+        .footer-section:last-child {
+            margin-bottom: 0;
+       }
+
+}
+    
