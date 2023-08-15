@@ -189,8 +189,8 @@ nav .mainMenu {
 }
 
 .section-profile > img{
-    width: 50%;
-    border-radius: 100%;
+    width: 70%;
+    border-radius: 20% 20%;
 
     
 }
@@ -511,7 +511,7 @@ footer {
         text-align: center;
     }
     .section-profile > img {
-        margin: 2px auto;
+        margin-top: 30px;
         max-width: 45%;
         height: 20%;
     }
