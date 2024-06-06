@@ -267,9 +267,13 @@ h2 {
 }
 
 .section-skills {
-    display: flex; 
+    display: grid;
     justify-content: center;
     margin: 10px 0; 
+    height:300px;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+    grid-gap: 10px;
 }
 
 
